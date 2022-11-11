@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 
-const Navegation = () => {
+export const Navegation = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
 
@@ -82,5 +82,3 @@ const Navegation = () => {
     </Navbar>
   );
 };
-
-export default Navegation;
