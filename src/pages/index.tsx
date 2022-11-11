@@ -1,6 +1,7 @@
 import {Navegation} from "../components/Navbar";
 import { Banner } from "../components/Banner";
-
+import { Skills } from "../components/Skills";
+import {Projects} from "../components/Projects"
 // import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -8,6 +9,8 @@ export default function Home() {
     <>
     <Navegation />
     <Banner />
+    <Skills />
+    <Projects />
     </>
   );
 }
