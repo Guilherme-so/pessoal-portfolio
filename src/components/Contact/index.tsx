@@ -33,7 +33,7 @@ export const Contact = () => {
     });
     setButtonText("Enviar");
     setFormDetails(forminitialDetail);
-    
+
     if (response.ok) {
       setStatus({ success: true, message: "Email enviado com sucesso!" });
     } else {

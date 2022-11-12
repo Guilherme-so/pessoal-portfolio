@@ -2,11 +2,12 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import NextCors from "nextjs-cors";
 import nodemailer from "nodemailer";
 
+
 const contactEmail = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "guilhermemagno09@gmail.com",
-    pass: "pnwuirlypldurocb",
+    user: process.env.NODEMALER_EMAIL,
+    pass: process.env.NODEMALER_PASS,
   },
 });
 
@@ -14,7 +15,7 @@ contactEmail.verify((error) => {
   if (error) {
     console.log(error);
   } else {
-    console.log("Ready to Send");
+    console.log("Pronto para enviar!");
   }
 });
 
@@ -47,7 +48,7 @@ export default async function handler(
 
     const mail = {
       from: email,
-      to: "guilhermemagno09@gmail.com",
+      to: process.env.NODEMALER_EMAIL,
       subject: "Envio Do Formulario De Contato - Portfolio",
       html: `
     <p>Nome: ${name } ${sobrenome}</p>
