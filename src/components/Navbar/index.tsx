@@ -1,9 +1,11 @@
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 
 export const Navegation = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     const scrolled = () => {
@@ -57,23 +59,26 @@ export const Navegation = () => {
               }
               onClick={() => updateActiveLink("projects")}
             >
-              Projects
+              Projetos
             </Nav.Link>
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
+              <a
+                href="https://www.linkedin.com/in/guilherme-so/"
+                target={"_blank"}
+              >
                 <img src="assets/img/nav-icon1.svg" alt="nav-icon1" />
               </a>
-              <a href="#">
-                <img src="assets/img/nav-icon2.svg" alt="nav-icon2" />
-              </a>
-              <a href="#">
-                <img src="assets/img/nav-icon3.svg" alt="nav-icon3" />
+              <a 
+              href="https://github.com/Guilherme013S"
+              target={"_blank"}
+              >
+                <img src="assets/img/github.svg" alt="nav-icon2" />
               </a>
 
-              <button className="vvd">
-                <span>let's connect</span>
+              <button className="vvd" onClick={() => router.push("/#contact")}>
+                <span>Contate-me</span>
               </button>
             </div>
           </span>

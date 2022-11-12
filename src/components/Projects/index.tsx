@@ -1,4 +1,5 @@
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
+import TrackVisibility from "react-on-screen";
 import { ProjectCard } from "./ProjectCard";
 
 export function Projects() {
@@ -35,11 +36,18 @@ export function Projects() {
       <Container>
         <Row>
           <Col>
-            <h2>Projetos</h2>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum,
-              veritatis.
-            </p>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div className={isVisible ? "animate__animated animate__bounce" : ""}>
+                  <h2>Projetos</h2>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Laborum, veritatis.
+                  </p>
+                </div>
+              )}
+            </TrackVisibility>
+
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav
                 variant="pills"
@@ -47,13 +55,13 @@ export function Projects() {
                 id="pills-tab"
               >
                 <Nav.Item>
-                  <Nav.Link eventKey="first">Tab one</Nav.Link>
+                  <Nav.Link eventKey="first">Tab 1</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="second">Tab two</Nav.Link>
+                  <Nav.Link eventKey="second">Tab 2</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="third">Tab three</Nav.Link>
+                  <Nav.Link eventKey="third">Tab 3</Nav.Link>
                 </Nav.Item>
               </Nav>
               <Tab.Content>
@@ -64,8 +72,8 @@ export function Projects() {
                     ))}
                   </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="second">Loren ipsun</Tab.Pane>
-                <Tab.Pane eventKey="third">Loren ipsun</Tab.Pane>
+                <Tab.Pane eventKey="second"></Tab.Pane>
+                <Tab.Pane eventKey="third"></Tab.Pane>
               </Tab.Content>
             </Tab.Container>
           </Col>
