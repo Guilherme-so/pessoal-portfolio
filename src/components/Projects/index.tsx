@@ -1,35 +1,9 @@
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
+import { antigos, recentes } from "../../../dummy-data";
 import { ProjectCard } from "./ProjectCard";
 
 export function Projects() {
-  const projects = [
-    {
-      title: "FrontEnd",
-      description: "Reactjs",
-      imgUrl: "/assets/img/project-img1.png",
-    },
-    {
-      title: "FrontEnd",
-      description: "Reactjs",
-      imgUrl: "/assets/img/project-img1.png",
-    },
-    {
-      title: "FrontEnd",
-      description: "Reactjs",
-      imgUrl: "/assets/img/project-img1.png",
-    },
-    {
-      title: "FrontEnd",
-      description: "Reactjs",
-      imgUrl: "/assets/img/project-img1.png",
-    },
-    {
-      title: "FrontEnd",
-      description: "Reactjs",
-      imgUrl: "/assets/img/project-img1.png",
-    },
-  ];
 
   return (
     <section className="project" id="projects">
@@ -55,24 +29,30 @@ export function Projects() {
                 id="pills-tab"
               >
                 <Nav.Item>
-                  <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                  <Nav.Link eventKey="first">Recentes</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                  <Nav.Link eventKey="second">Antigos</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                  <Nav.Link eventKey="third">Outros</Nav.Link>
                 </Nav.Item>
               </Nav>
               <Tab.Content>
                 <Tab.Pane eventKey="first">
                   <Row>
-                    {projects.map((project, index) => (
+                    {recentes.map((project, index) => (
                       <ProjectCard key={index} {...project} />
                     ))}
                   </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="second"></Tab.Pane>
+                <Tab.Pane eventKey="second">
+                  <Row>
+                  {antigos.map((project, index) => (
+                      <ProjectCard key={index} {...project} />
+                    ))}
+                  </Row>
+                </Tab.Pane>
                 <Tab.Pane eventKey="third"></Tab.Pane>
               </Tab.Content>
             </Tab.Container>
