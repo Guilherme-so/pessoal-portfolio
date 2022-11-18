@@ -3,69 +3,64 @@ export const recentes = [
     title: "MobAnime",
     description: "Nextjs",
     imgUrl: "/assets/img/mobanime.png",
+    link: "https://mobanime.vercel.app/",
   },
   {
     title: "Campanha Animal",
     description: "Nextjs",
     imgUrl: "/assets/img/campanhaAnimal.png",
+    link: "https://campanha-animal.vercel.app/",
   },
   {
     title: "MinasCamp",
-    description:"Aplicação fullStack utilizando Expressjs e banco de dados NoSQL Mongodb",
+    description:
+      "Aplicação fullStack utilizando Expressjs e banco de dados NoSQL Mongodb",
     imgUrl: "/assets/img/MinasCamp.png",
     link: "https://shrouded-shelf-96367.herokuapp.com/",
   },
   {
     title: "Clothing-store",
-    description:"Aplicação react usando Reactjs,Router, firebase é  Redux para gerenciar o estado",
+    description:
+      "Aplicação react usando Reactjs,Router, firebase é  Redux para gerenciar o estado",
     imgUrl: "/assets/img/clothing-store.png",
-    link: "https://clothing-cop.netlify.app/",
+    link: "https://clothing-store-nbkpr44ll-guilherme013s.vercel.app/",
   },
   {
     title: "Dogs",
     description: "Dogs Social midia feito com  React.",
     imgUrl: "/assets/img/dogs.png",
-    link: "https://clothing-cop.netlify.app/",
+    link: "https://justdogs.netlify.app/",
   },
   {
     title: "Adivinhe Meu Numero",
     description: "Um simples jogo em vanilla js.",
     imgUrl: "/assets/img/guess-mynumber.png ",
-    link: "https://guilherme013s.github.io/Guess-My-Number-Dom/",
+    link: "https://guess-my-number-dom.vercel.app/",
   },
 ];
 
 export const antigos = [
-    {
-        title: 'Meetups',
-        description:'Grupo de encontro website',
-        imgUrl: '',
-        link: 'https://nextjs-meetups-o2dnl8673-guilherme013s.vercel.app/',
-      },
-      {
-        title: "Cocktail",
-        description:"Site de bebidas, usando uma API externa!",
-        imgUrl: "/assets/img/cocktail.png",
-        link: "https://15react-cocktail.netlify.app/",
-      },
-      {
-        title: "Tours",
-        description: "projeto API externa com React",
-        imgUrl: "/assets/img/tours.png",
-        link: "https://02react-tours.netlify.app/",
-      },
-    {
-      title: "Lista De Compras",
-      description: "projeto API externa com React",
-      imgUrl: "/assets/img/grocery-bud.png ",
-      link: "https://10react-grocery-build.netlify.app/",
-    },
-  ];
-  
-
+  {
+    title: "Cocktail",
+    description: "Site de bebidas, usando uma API externa!",
+    imgUrl: "/assets/img/cocktail.png",
+    link: "https://15react-cocktail.netlify.app/",
+  },
+  {
+    title: "Tours",
+    description: "projeto API externa com React",
+    imgUrl: "/assets/img/tours.png",
+    link: "https://02react-tours.netlify.app/",
+  },
+  {
+    title: "Lista De Compras",
+    description: "Crud basico com React",
+    imgUrl: "/assets/img/grocery-bud.png ",
+    link: "https://10react-grocery-build.netlify.app/",
+  },
+];
 
 export const works = [
-
   {
     id: 5,
     title: "Cart",
@@ -100,6 +95,12 @@ export const works = [
     stack: ["ReactJs", "ExpressJs", "NextJs", "MongoDB"],
   },
   {
+    title: "Meetups",
+    description: "Grupo de encontro website",
+    imgUrl: "",
+    link: "https://nextjs-meetups-o2dnl8673-guilherme013s.vercel.app/",
+  },
+  {
     id: 9,
     title: "Stripe",
     img: "/images/stripe.png",
@@ -124,4 +125,3 @@ export const works = [
     link: "https://08react-lorem-ipsum-generator.netlify.app/",
   },
 ];
-

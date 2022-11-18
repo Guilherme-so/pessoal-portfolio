@@ -66,13 +66,13 @@ export const Navegation = () => {
             <div className="social-icon">
               <a
                 href="https://www.linkedin.com/in/guilherme-so/"
-                target={"_blank"}
+                target={"_blank"} rel="noreferrer"
               >
                 <img src="assets/img/nav-icon1.svg" alt="nav-icon1" />
               </a>
               <a 
               href="https://github.com/Guilherme013S"
-              target={"_blank"}
+              target={"_blank"} rel="noreferrer"
               >
                 <img src="assets/img/github.svg" alt="nav-icon2" />
               </a>
