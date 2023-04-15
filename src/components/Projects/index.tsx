@@ -15,8 +15,7 @@ export function Projects() {
                 <div className={isVisible ? "animate__animated animate__bounce" : ""}>
                   <h2>Projetos</h2>
                   <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Laborum, veritatis.
+                    Aqui está a alguns de meus trabalhos.
                   </p>
                 </div>
               )}
@@ -32,7 +31,7 @@ export function Projects() {
                   <Nav.Link eventKey="first">Recentes</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="second">Antigos</Nav.Link>
+                  <Nav.Link eventKey="second">Mobile</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey="third">Outros</Nav.Link>
@@ -48,9 +47,9 @@ export function Projects() {
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
                   <Row>
-                  {antigos.map((project, index) => (
+                  {/* {antigos.map((project, index) => (
                       <ProjectCard key={index} {...project} />
-                    ))}
+                    ))} */}
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="third"></Tab.Pane>

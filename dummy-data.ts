@@ -1,23 +1,46 @@
 export const recentes = [
   {
+    title: "Video Player",
+    description: "Video player com NextJs e graphql.",
+    imgUrl: "/assets/img/video_player-1.png",
+    link: "https://video-platform-kappa.vercel.app/",
+  },
+  {
     title: "MobAnime",
-    description: "Nextjs",
+    description: "Site de anime com react e graphql",
     imgUrl: "/assets/img/mobanime.png",
     link: "https://mobanime.vercel.app/",
   },
   {
+    title: "Formulario de admissão",
+    description: "Formulario de admissão para a gethash com nextjs e typescript.",
+    imgUrl: "/assets/img/admissao_form.png",
+    link: "https://forms-data.vercel.app/",
+  },
+
+  {
     title: "Campanha Animal",
-    description: "Nextjs",
+    description: "Website para Ong de animais.",
     imgUrl: "/assets/img/campanhaAnimal.png",
     link: "https://campanha-animal.vercel.app/",
   },
   {
     title: "MinasCamp",
     description:
-      "Aplicação fullStack utilizando Expressjs e banco de dados NoSQL Mongodb",
+      "Website sobre acampamento.",
     imgUrl: "/assets/img/MinasCamp.png",
     link: "https://shrouded-shelf-96367.herokuapp.com/",
   },
+  {
+    title: "Adivinhe Meu Numero",
+    description: "Um simples jogo em vanilla js.",
+    imgUrl: "/assets/img/guess-mynumber.png ",
+    link: "https://guess-my-number-dom.vercel.app/",
+  },
+];
+
+export const antigos = [
+  
   {
     title: "Clothing-store",
     description:
@@ -31,15 +54,6 @@ export const recentes = [
     imgUrl: "/assets/img/dogs.png",
     link: "https://justdogs.netlify.app/",
   },
-  {
-    title: "Adivinhe Meu Numero",
-    description: "Um simples jogo em vanilla js.",
-    imgUrl: "/assets/img/guess-mynumber.png ",
-    link: "https://guess-my-number-dom.vercel.app/",
-  },
-];
-
-export const antigos = [
   {
     title: "Cocktail",
     description: "Site de bebidas, usando uma API externa!",

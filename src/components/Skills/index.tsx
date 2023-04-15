@@ -40,8 +40,9 @@ export const Skills = () => {
                   <div className="skill-bx">
                     <h2>Skills</h2>
                     <p>
-                      HTML, CSS(Styled-Components,CSS-Modules,Tailwind-CSS), Python, Javascript, Typescript, ReactJs,NextJs,Recoil, Redux,
-                      Rest-API, GraphQl, NodeJs, Expressjs, MongoDB...
+                      HTML, CSS(Styled-Components,CSS-Modules,Tailwind-CSS),
+                      Python, Javascript, Typescript, ReactJs, NextJs, Recoil, 
+                      Redux, Rest-API, GraphQl, NodeJs, Expressjs, Dart, Flutter{" "}
                     </p>
                     <Carousel
                       responsive={responsive}
@@ -58,7 +59,7 @@ export const Skills = () => {
                       </div>
                       <div className="item">
                         <img src="/assets/img/meter3.svg" alt="image" />
-                        <h5>Web developer</h5>
+                        <h5>Mobile</h5>
                       </div>
                       {/* <div className="item">
                   <img src="/assets/img/meter1.svg" alt="image" />
